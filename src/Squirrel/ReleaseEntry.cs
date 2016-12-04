@@ -65,7 +65,7 @@ namespace Squirrel
 
         [IgnoreDataMember]
         public string PackageName {
-            get { return Filename.Substring(0, Filename.IndexOfAny(new[] { '-', '.' })); }
+            get { return Filename.Substring(0, Filename.IndexOfAny(new[] { '-' })); }
         }
 
         public string GetReleaseNotes(string packageDirectory)
